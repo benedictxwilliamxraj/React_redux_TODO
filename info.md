@@ -30,3 +30,19 @@
 ### Creating dashboard in react
 1. npm install --save react@16.4.2 react-dom@16.5.0 react-redux@5.0.7
 
+2. mapStateToProps
+
+### Routing and Navigation
+1. react-router -- determines which React component to display based on URL
+2. npm install react-router-dom@4.3.1 --save
+3. npm install --save history@4.7.2
+
+### adding new tasks
+1. Saga -- runs in backgorund by redux
+2. Generators 
+3. Full length course on /Redux-Saga
+
+## CREATE saga to generate random Task ID, create task dispatch action containing details
+1. mapDispatchtoprops
+2. npm install --save redux-logger@3.0.6 redux-saga@0.16.2
+3. npm install --save uuid
