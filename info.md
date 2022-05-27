@@ -46,3 +46,11 @@
 1. mapDispatchtoprops
 2. npm install --save redux-logger@3.0.6 redux-saga@0.16.2
 3. npm install --save uuid
+
+
+### Creating Storage with Node and MongoDB
+1. npm install --save dev mongodb@3.1.10
+2. npm install --save dev express@4.16.3 cors@2.8.4 body-parser@1.18.3
+
+### Integration of Front-end with Backend
+1. 
