@@ -53,4 +53,22 @@
 2. npm install --save dev express@4.16.3 cors@2.8.4 body-parser@1.18.3
 
 ### Integration of Front-end with Backend
-1. 
+1. npm install --save dev concurrently@4.0.1
+2. axios,jquery, fetch use for HTTP requests.
+3. npm install axios@0.18.0
+
+
+### Aunthentication
+1. Build a "Route guard"
+2. npm install react-router
+## Login Page and Login saga
+1. npm install md5 
+2. yield ?
+
+
+
+
+### Questiond'
+1. Relation b/w Saga / Express --> where is axios coming in picture 
+    --> where is actual post happening ?
+2. what does "put" in redux-saga effect do?

@@ -2,21 +2,29 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';   
 import { connectDB } from './connect-db';
+import './initialize-db';
+import { authenticationRoute } from './authenticate';
 
-let port =7777;
+
+let port = 7777;
 let app = express();
 
-app.listen(port, console.log('serfver is listening on port', port));
+
 
 // app.get('/',(req,res)=>{
 //     res.send('hello world');
 // });
+
+
 
 app.use(
     cors(),
     bodyParser.urlencoded({extended:true}),
     bodyParser.json()
 );
+
+authenticationRoute(app);
+
 
 export const addNewTask = async task => {
     let db = await connectDB();
@@ -45,6 +53,7 @@ export const updateTask = async task =>{
 
 
 
+
 app.post('/task/new', async(req,res)=>{
     let task = req.body.task;
     await addNewTask(task);
@@ -56,3 +65,5 @@ app.post('/task/update', async(req,res)=>{
     await updateTask(task);
     res.status(200).send();
 });
+
+app.listen(port, ()=>{console.log('server is listening on port', port)});
